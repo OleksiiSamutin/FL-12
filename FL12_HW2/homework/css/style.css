@@ -211,7 +211,7 @@
         margin-left: 100px;
     }
 
-    .padding-medium>h2 {
+    .padding-medium>h2, .tm-section-title {
         color: #89afc5;
         font-weight: 300;
     }
