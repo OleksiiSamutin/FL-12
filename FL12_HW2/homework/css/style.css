@@ -21,7 +21,7 @@
 .tm-banner-text {
     position: relative;
     text-shadow: 4px 4px 3px #333;
-    animation: textAnimation infinite ease-in-out 4s normal; /* TODO: ANIMATION OF TEXT */
+    animation: textAnimation infinite ease-in-out 4s normal;
 }
 
 .flex-2-col{
@@ -125,7 +125,6 @@ textarea.form-control{
 }
 
 .contact-form div:last-of-type{
-    /* display: none; */
     position: relative;
 }
 
