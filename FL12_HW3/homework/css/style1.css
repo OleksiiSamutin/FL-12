@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+p {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0; }
+
+body {
+  width: 1920px;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.header {
+  margin: 0 auto; }
+  .header .header-wrap {
+    padding-left: 191px;
+    padding-top: 20px;
+    height: 720px;
+    background: url("../img/m-h-day.jpg") center/cover no-repeat;
+    border-bottom-right-radius: 40% 40%; }
+
+.landing-logo {
+  display: flex;
+  flex-direction: row;
+  width: 127px;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .landing-logo img {
+    display: block; }
+  .landing-logo p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #282b39;
+    display: flex;
+    flex-direction: column;
+    line-height: 1; }
+    .landing-logo p span {
+      font-family: "Hind", sans-serif;
+      align-self: center;
+      margin-top: 6px;
+      word-spacing: 2px;
+      display: block;
+      font-weight: normal;
+      font-size: 10px; }
+
+.header_heading {
+  margin-bottom: 35px;
+  width: 500px;
+  margin-top: 70px;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 0.016em;
+  line-height: 1.05;
+  color: #282b39;
+  position: relative;
+  z-index: 4; }
+  .header_heading:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background-color: #0ca1c8;
+    z-index: -2;
+    left: 0;
+    bottom: 0; }
+
+.header_text {
+  width: 800px;
+  text-align: left;
+  white-space: pre-line;
+  word-spacing: 0.08em;
+  line-height: 1.53;
+  font-family: "Hind", sans-serif;
+  color: #282b39;
+  margin-bottom: 60px; }
+
+.header_button {
+  width: 142px;
+  height: 48px;
+  background-color: #699a00;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Hind", sans-serif;
+  color: #fff;
+  cursor: pointer; }
+
+.login {
+  display: inline-block;
+  margin-left: 150px;
+  color: #fff;
+  font-size: 20px; }
+
+.section {
+  margin: 0 auto;
+  width: 1120px; }
+  .section_text {
+    text-align: center;
+    margin-top: 38px;
+    font-size: 40px;
+    color: #282b39;
+    font-weight: 600;
+    letter-spacing: 0.016em;
+    word-spacing: 0.01em;
+    position: relative;
+    margin-bottom: 38px; }
+    .section_text::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 190px;
+      height: 50px;
+      background-color: #0ca1c8;
+      z-index: -2;
+      left: 567px;
+      bottom: 0;
+      bottom: 7px; }
+  .section_card {
+    display: flex; }
+    .section_card_right_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+    .section_card_wrap {
+      display: flex;
+      flex-direction: column; }
