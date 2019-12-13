@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    max-width: 1600px;
+    min-width: 900px;
+    color: #777;
+}
+
+.btn {
+
+    font-weight: bold;
+    border-style: none;
+    border-radius: 22px;
+    letter-spacing: 0.15em;
+    word-spacing: 0.3em;
+    transition: background .2s linear;
+    outline: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #bfba55;
+    color: #fff;
+
+}
+
+.btn--header {
+    font-size: 10px;
+    font-family: 'Merriweather', serif;
+    background-color: #fff;
+    text-transform: uppercase;
+    width: 160px;
+    height: 45px;
+
+}
+
+.top__header {
+    padding-left: 14.4%;
+    padding-right: 14.7%;
+    height: 86px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_text {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 18px;
+    color: #000;
+    opacity: .75;
+    letter-spacing: 0.2em;
+    word-spacing: 2px;
+
+}
+
+.nav__link {
+    font-weight: normal;
+    color: #777;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 40px;
+    letter-spacing: 0.12em;
+}
+
+.nav__link:visited {
+    color: #bfba55;
+}
+
+.nav__link:last-child {
+    margin-right: 0;
+
+}
+
+.header__img {
+    background: url('../img/home-bg.jpg') top no-repeat;
+    background-size: cover;
+    height: 800px;
+    position: relative;
+}
+
+.header__img::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #000;
+    opacity: .75;
+    z-index: 1;
+}
+
+.header__wrap {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.header__title {
+    padding-top: 328px;
+    font-size: 60px;
+    color: #fff;
+    word-spacing: 0.09em;
+}
+
+.header__subtitle {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #bfba55;
+    letter-spacing: 0.2em;
+    word-spacing: 0.0002em;
+}
