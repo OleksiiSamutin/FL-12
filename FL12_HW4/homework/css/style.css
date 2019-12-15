@@ -10,6 +10,7 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 14px;
     min-width: 900px;
+    max-height: 1600px;
     color: #777;
 }
 
@@ -101,7 +102,7 @@ body {
 .header__img {
     background: url('../img/home-bg.jpg') top no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 100vh;
     position: relative;
 }
 
@@ -122,10 +123,11 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .header__title {
-    padding-top: 328px;
     font-size: 60px;
     color: #fff;
     word-spacing: 0.09em;
