@@ -7,8 +7,8 @@ let userGuessNumber;
 let attemptsNumber = 3;
 let totalPrize = 0;
 let possiblePrize = 100;
-
-
+let prize = 100;
+let tempPrize = prize;
 while (game){
 
     game = confirm('Do you want to play a game?');
@@ -17,39 +17,26 @@ while (game){
         break;
     }
     while (attemptsNumber>0){
-        let minPrize = 25;
-        let averPrize = 2 * minPrize;
-        let maxPrize = 2 * averPrize;
         let boolContinue;
-        if (attemptsNumber === 1){
-            possiblePrize = minPrize;
-        } else if(attemptsNumber === 2){
-            possiblePrize = averPrize;
-        } else if (attemptsNumber === 3){
-            possiblePrize = maxPrize;
-        }
         rand = Math.floor(Math.random() * (max - min + 1)) + min;
         userGuessNumber = prompt(`Choose a roulete pocket number from ${min} to ${max}
 Attempts left: ${attemptsNumber}
 Total prize: ${totalPrize}$
 Possible prize on current attempt: ${possiblePrize}$`,'')
          userGuessNumber = parseInt(userGuessNumber);
-         if (attemptsNumber === 3 && userGuessNumber===rand){
-             totalPrize+=maxPrize;
-             boolContinue=confirm(`Congratulation, you won!   Your prize is: ${maxPrize}$. Do you want to continue?`)
-
-         } else if (attemptsNumber === 2 && userGuessNumber===rand){
-            totalPrize+=averPrize;
-            boolContinue=confirm(`Congratulation, you won!   Your prize is: ${averPrize}$. Do you want to continue?`)
-         } else if (attemptsNumber === 1 && userGuessNumber===rand){
-            totalPrize+=minPrize;
-            boolContinue= confirm(`Congratulation, you won!   Your prize is: ${minPrize}$. Do you want to continue?`)
+         if (userGuessNumber===rand){
+             totalPrize+=prize;
+             boolContinue=confirm(`Congratulation, you won!   Your prize is: ${prize}$. Do you want to continue?`)
          }
+
+        possiblePrize = tempPrize /2;
+        tempPrize = tempPrize/2;
         attemptsNumber--;
+
         if (boolContinue){
-            maxPrize*= 2;
-            averPrize*= 2;
-            minPrize*= 2;
+            prize*= 2;
+            tempPrize=prize;
+            possiblePrize = prize;
             max += 4;
             attemptsNumber = 3;
         }
@@ -59,9 +46,10 @@ Possible prize on current attempt: ${possiblePrize}$`,'')
             playAgain = confirm('Do you want to play again?')
             if (playAgain){
                 attemptsNumber=3;
-                minPrize = 25;
+                prize = 100;
                 max = 8;
                 possiblePrize = 100;
+                tempPrize=prize;
                 totalPrize = 0;
             }
             if (!playAgain){
