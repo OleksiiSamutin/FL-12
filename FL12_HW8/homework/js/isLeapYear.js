@@ -1,12 +1,13 @@
 function isLeapYear(param) {
-    let date = new Date(param)
+    let date = new Date(param);
+    let year = date.getFullYear();
     if (date.toString() === 'Invalid Date') {
         return 'Invalid Date';
     } else {
-        if (new Date(date.getFullYear(), 1, 29).getDate() === 29) {
-            return `${date.getFullYear()} is a leap year`;
+        if (new Date(year, 1, 29).getDate() === 29) {
+            return `${year} is a leap year`;
         } else {
-            return `${date.getFullYear()} is not a leap year`;
+            return `${year} is not a leap year`;
         }
     }
 }
