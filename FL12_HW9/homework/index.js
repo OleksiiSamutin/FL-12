@@ -35,7 +35,7 @@ function executeforEach(array, funct) {
 function mapArray(array, funct) {
     let tempArr = [...array];
     for (let i = 0; i < tempArr.length; i++) {
-        if (typeof tempArr[i] === "string") {
+        if (typeof tempArr[i] === 'string') {
             tempArr[i] = Number.parseInt(tempArr[i])
         }
     }
@@ -43,5 +43,18 @@ function mapArray(array, funct) {
     return executeforEach(tempArr, funct);
 }
 
-console.log(executeforEach([1,2,3], function(el) {console.log(el * 2)}))
-console.log(mapArray([2,"5",8], function(el) {return el + 3} ))
+function flipOver(string){
+    let result = '';
+    for (let i = string.length-1; i>=0; i--){
+        result+=string[i]
+    }
+    return result;
+}
+console.log(executeforEach([1,2,3], function(el) {
+    console.log(el * 2)
+}))
+console.log(mapArray([2,'5',8], function(el) {
+    return el + 3
+}
+    ))
+console.log(flipOver('hey world'));
