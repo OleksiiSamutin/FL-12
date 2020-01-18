@@ -114,17 +114,17 @@ battle(secondFighter,myFighter);
 console.log(secondFighter.logCombatHistory())
 console.log(myFighter.logCombatHistory())
 
-// let name1 = myFighter.getName();
-// console.log(name1);
-// let name2 = myFighter._name;
-// console.log(myFighter.getDamage());
-// console.log(myFighter.getStrength());
-// console.log(myFighter.getAgility());
-// console.log(myFighter.getHealth());
-// battle(myFighter, secondFighter);
-// battle(myFighter,secondFighter);
-// myFighter.heal(100);
-// secondFighter.heal(100);
-// battle(secondFighter,myFighter);
-// console.log(myFighter.logCombatHistory());
-// console.log(secondFighter.logCombatHistory());
+let name1 = myFighter.getName();
+console.log(name1);
+let name2 = myFighter._name;
+console.log(myFighter.getDamage());
+console.log(myFighter.getStrength());
+console.log(myFighter.getAgility());
+console.log(myFighter.getHealth());
+battle(myFighter, secondFighter);
+battle(myFighter,secondFighter);
+myFighter.heal(100);
+secondFighter.heal(100);
+battle(secondFighter,myFighter);
+console.log(myFighter.logCombatHistory());
+console.log(secondFighter.logCombatHistory());
